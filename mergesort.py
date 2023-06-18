@@ -4,6 +4,9 @@ import matplotlib.pyplot as plt
 
 # function names should be snake case
 def merge_sort(list_to_sort_by_merge):
+    """
+    Sort list by mergesort
+    """
     # this was redundant and complicated
     if len(list_to_sort_by_merge) < 2:
         return
