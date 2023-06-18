@@ -48,20 +48,21 @@ def merge_sort(list_to_sort_by_merge):
         right_index += 1
 
 
-my_list = [54, 26, 93, 17, 77, 31, 44, 55, 20]
-# Use descriptive noun and DRY
-my_list_indexes = range(len(my_list))
-plt.bar(my_list_indexes, my_list)
-plt.title("Before mergesort")
-plt.xlabel("List index")
-plt.ylabel("List value at index (a.u.)")
-plt.xticks(range(len(my_list)))
-plt.show()
-merge_sort(my_list)
-x = range(len(my_list))
-plt.bar(my_list_indexes, my_list)
-plt.title("After mergesort")
-plt.xlabel("List index")
-plt.ylabel("List value at index (a.u.)")
-plt.xticks(range(len(my_list)))
-plt.show()
+if __name__ == "__main__":
+    my_list = [54, 26, 93, 17, 77, 31, 44, 55, 20]
+    # Use descriptive noun and DRY
+    my_list_indexes = range(len(my_list))
+    plt.bar(my_list_indexes, my_list)
+    plt.title("Before mergesort")
+    plt.xlabel("List index")
+    plt.ylabel("List value at index (a.u.)")
+    plt.xticks(range(len(my_list)))
+    plt.show()
+    merge_sort(my_list)
+    x = range(len(my_list))
+    plt.bar(my_list_indexes, my_list)
+    plt.title("After mergesort")
+    plt.xlabel("List index")
+    plt.ylabel("List value at index (a.u.)")
+    plt.xticks(range(len(my_list)))
+    plt.show()
